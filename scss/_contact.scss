@@ -1,0 +1,62 @@
+.contact {
+	padding: 50px 0;
+	width: 100%;
+	background-color: $lightgrey;
+
+	.link-wrap {
+		width: 550px;
+		margin: 50px auto 0;
+
+
+		.icon {
+			display: inline-block;
+			float: left;
+			margin-left: 50px;
+
+			a {
+				position: relative;
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background-color: $bluenavy;
+
+				object {
+					overflow: hidden;
+					position:absolute;
+					top: 0;
+					right: 0;
+					width: 100px;
+					height: 100px;
+				}
+			}
+
+			&:nth-child(1) {
+			margin-left: 0;
+			}
+		}
+	}
+
+	.separation-line {
+		margin: 50px auto;
+		display: block;
+		height: 3px;
+		width: 200px;
+		background-color: $bluenavy;
+	}
+
+	.email-wrap {
+		width: 755px;
+		margin: 0 auto;
+
+		.email {
+			text-decoration: none;
+			color: $bluenavy;
+			font-size: 50px;
+
+			&:hover {
+				color: $bluenavy +50;
+			}
+		}
+	}
+}

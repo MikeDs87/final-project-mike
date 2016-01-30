@@ -1,0 +1,75 @@
+.work-together {
+	padding: 50px 0;
+
+	p {
+		margin: 20px 0 50px;
+		text-align: center;
+
+		color: rgba(0,0,0,0.5); 
+	}
+
+	form {
+		text-align: left;
+		max-width: 500px;
+		margin: 0 auto 50px;
+
+		input, textarea {
+			border: 2px solid $bluenavy;
+			width: 100%;
+			padding: 10px;
+
+			&:focus {
+				outline: none;
+				border-color: $bluenavy +50;
+			}
+		}
+
+		textarea {
+			height: 10em;
+		}
+
+		.submit-wrap {
+			text-align: center;
+
+		}
+
+		[type="submit"] {
+			background: $bluenavy;
+			color: white;
+			font-size: 18px;
+			width: 30%;
+
+			&:hover {
+				background: $bluenavy +50;
+				transition-duration: 0.4s;
+			}
+
+		}
+
+		.contact-info-group {
+			label {
+				width: 50%;
+				float: left;
+
+				&:nth-child(1) {
+					padding-right: 5px;
+				}
+				&:nth-child(2) {
+					padding-left: 5px;
+				}
+			}
+		}
+
+		label {
+			display: block;
+			margin-bottom: 20px;
+
+			span {
+				display: block;
+				margin-bottom: 10px;
+				color: rgba(0,0,0,0.5);
+			}
+		}
+	}
+
+}

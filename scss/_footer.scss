@@ -1,0 +1,43 @@
+.site-footer {
+	position: relative;
+	width: 100%;
+	height: 90px;
+
+	p, nav, .logo {
+		z-index: 2;
+	}
+
+	p {
+		float: right;
+		margin: 30px 30px 0 0;
+		color: rgba(0,0,0,0.5);
+
+		font-size: 13px;
+		line-height: 1.2;
+	}
+
+	nav {
+		float: left;
+		margin: 35px 0 0 5px;
+	}
+
+	.white-box { //hack for apply the opacity to the background image
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+
+		background-color: white;
+		opacity: 0.5;
+	}
+
+	.background {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: -2;
+		background-image: url(../img/hero.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+}

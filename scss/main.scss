@@ -1,0 +1,48 @@
+/* 
+Project Name: My Portfolio
+Client: Michele De Simone
+Author: Michele De Simone
+*/
+
+/*******************************************/
+/* COLOURS */
+/*******************************************/
+
+@import "variables";
+
+/*******************************************/
+/* SENSIBLE DEFAULTS */                  
+/*******************************************/
+
+*{
+	box-sizing: border-box;
+}
+
+@import "default";
+
+/*******************************************/
+/* TYPOGRAPHY */
+/*******************************************/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*******************************************/
+/* LAYOUT  */                 
+/*******************************************/
+
+@import "header";
+@import "aboutme";
+@import "portfolio";
+@import "work-together";
+@import "contact";
+@import "footer";
+
+/*******************************************/
+/* HELPER CLASSES */
+/*******************************************/
+
+@import "clearfix";
+@import "normalize";
+@import "reset";

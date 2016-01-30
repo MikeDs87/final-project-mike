@@ -5,24 +5,277 @@
     	<meta name="description" content="site description goes here">
     	<meta name="keywords" content="site, keywords, go, here">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-		<title>CHANGE_THE_TITLE</title>
 
-		<link rel="stylesheet" href="css/normalize.css">
+		<title>Portfolio MDS</title>
+		<link rel="icon" type="image/png" href="img/myicon.png">
+
+		<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 		<link rel="stylesheet" href="css/main.css">
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Catamaran|Palanquin+Dark' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div class="site-container">
-			<header class="site-header">
-				<h1>Site title</h1>
-			</header>
-			<main class="site-content">
 
-			</main>
-			<footer class="site-footer">
-				&copy; CHANGE_THE_YEAR
-			</footer>
-		</div><!-- .site-container -->
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<header class="site-header">
+			<nav class="menu">
+				<a href='#bio'>About Me</a>
+				<a href='#portfolio'>Works</a>
+				<a href='#contact'>Contacts</a>
+			</nav>
+			<div class="logo"></div>
+			<div class="center-block">
+				<div class="name-block">
+					<h1>
+						<span>Michele</span>
+						<span>De Simone</span>
+					</h1>
+				</div>
+				<p>Designer - Developer - Dreamer</p>
+			</div>
+			<p class="down">Learn more <i class="ion-arrow-down-b"></i></p> 
+		</header>
+
+		<main>
+
+			<section id="bio" class="bio">
+				<div class="bio-container clearfix">
+					<h2 class="title">About me...</h2>
+					<img class="my-photo" src="#" alt="my-picture" width="240" height="379">
+					<div class="my-bio">
+
+						<quote class="quote">
+
+							<object data="icons/quote-open.svg" type="image/svg+xml" class="quote-mark-op">
+		  					</object>
+
+		  					I know what I want<br>I just need to <em>make it real</em>
+
+		  					<object data="icons/quote-close.svg" type="image/svg+xml" class="quote-mark-cl">
+		  					</object>
+
+	  					</quote>
+
+						<p>Michele is an Italian grahic designer who makes stuff.<br>Whit over five year of experience in print design recently he landed in the wonderful world of web design.<br>His purpose is to create nice layouts for web pages and also to give a good user experience.</p>
+					</div>
+				</div>
+
+				<div class="skills-belt clearfix">
+					<div class="column">
+						<div class="skill-unit">
+							<div class="label">Communication</div>
+							<div class="skill-level rate-8">
+								<span></span><span></span><span></span><span></span><span></span>
+								<span></span><span></span><span></span><span></span><span></span>
+							</div>
+						</div>
+						<div class="skill-unit">
+							<div class="label">Learning</div>
+							<div class="skill-level rate-10">
+								<span></span><span></span><span></span><span></span><span></span>
+								<span></span><span></span><span></span><span></span><span></span>
+							</div>
+						</div>
+						<div class="skill-unit">
+							<div class="label">Planning</div>
+							<div class="skill-level rate-9">
+								<span></span><span></span><span></span><span></span><span></span>
+								<span></span><span></span><span></span><span></span><span></span>
+							</div>
+						</div>
+						<div class="skill-unit">
+							<div class="label">Organization</div>
+							<div class="skill-level rate-10">
+								<span></span><span></span><span></span><span></span><span></span>
+								<span></span><span></span><span></span><span></span><span></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="skill-unit">
+							<div class="label">Print Design</div>
+							<div class="skill-level rate-9">
+								<span></span><span></span><span></span><span></span><span></span>
+								<span></span><span></span><span></span><span></span><span></span>
+							</div>
+						</div>
+						<div class="skill-unit">
+							<div class="label">Visual Design</div>
+							<div class="skill-level rate-9">
+								<span></span><span></span><span></span><span></span><span></span>
+								<span></span><span></span><span></span><span></span><span></span>
+							</div>
+						</div>
+						<div class="skill-unit">
+							<div class="label">Programming</div>
+							<div class="skill-level rate-7">
+								<span></span><span></span><span></span><span></span><span></span>
+								<span></span><span></span><span></span><span></span><span></span>
+							</div>
+						</div>
+						<div class="skill-unit">
+							<div class="label">Ux Design</div>
+							<div class="skill-level rate-6">
+								<span></span><span></span><span></span><span></span><span></span>
+								<span></span><span></span><span></span><span></span><span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="portfolio" class="portfolio">
+				<h2> My portfolio</h2>
+				<nav class="selector-work">
+					<button type="button" class="active">All</a>
+					<button type="button" class="">Print</a>
+					<button type="button" class="">Web</a>
+				</nav>
+				
+				<div class="showcase-belt clearfix">
+					<div class="tale">
+
+						<div class="description-box">
+							<!-- <p class="description">Brand Identity</p> -->
+							<div class="background-description"></div>
+						</div>
+
+						<!-- <a class="fancybox artwork" rel="group" href="img/portfolio/big/small_mylogo.jpg">
+							<img src="img/portfolio/preview/small_mylogo.jpg" alt="" width="200" height="180"/>
+						</a>
+ -->
+					</div>
+
+					<!-- <a class="fancybox artwork" rel="group" href="img/portfolio/big/big_de1.jpg">
+						<img src="img/portfolio/preview/small_de1.jpg" alt="" width="200" height="180"/>
+					</a>
+					<a class="fancybox artwork" rel="group" href="img/portfolio/big/big_nsp.jpg">
+						<img src="img/portfolio/preview/small_nsp.jpg" alt="" width="200" height="180"/>
+					</a>
+					<a class="fancybox artwork" rel="group" href="img/portfolio/big/big_mini.jpg">
+						<img src="img/portfolio/preview/small_mini.jpg" alt="" width="200" height="180"/>
+					</a>
+					<a class="fancybox artwork" rel="group" href="img/portfolio/big/big_sme.jpg">
+						<img src="img/portfolio/preview/small_sme.jpg" alt="" width="200" height="180"/>
+					</a>
+					<a class="fancybox artwork" rel="group" href="img/portfolio/big/big_wild.jpg">
+						<img src="img/portfolio/preview/small_wild.jpg" alt="" width="200" height="180"/>
+					</a>
+					<a class="fancybox artwork" rel="group" href="img/portfolio/big/big_onechannel.jpg">
+						<img src="img/portfolio/preview/small_onechannel.jpg" alt="" width="200" height="180"/>
+					</a>
+					<a class="fancybox artwork" rel="group" href="big_image_1.jpg">
+						<img src="img/portfolio/preview/small_mysite.jpg" alt="" width="200" height="180"/>
+					</a> -->
+				</div>
+			</section>
+
+			<section id="contact" class="work-together">
+				<h2>Let's work together</h2>
+				<p>I'm available for freelance. Can't wait to work on my next project! <strong>Could it be yours?</strong></p>
+
+				<form method="POST" action="http://formspree.io/micheledesimone46@gmail.com">
+
+					<div class="contact-info-group">
+					    <label>
+					    	<span>Name</span>
+					    	<input type="text" name="name">
+					    </label>
+					    <label>
+					    	<span>Email</span>
+					    	<input type="email" name="_replyto">
+					    </label>
+					</div>
+
+				    <label>
+				    	<span>Tell me about your project</span>
+				    	<textarea name="message"></textarea>
+				    </label>
+
+				    <div class="submit-wrap">
+				    	<input type="submit" value="Send it">
+					</div>
+				</form>
+			</section>
+
+			<section class="contact clearfix">
+				<h2>Contatc me</h2>
+
+				<div class="link-wrap clearfix">
+					<div class="icon">
+						<a href="http://www.behance.net/MikeleDs_GD" target="_blank"> <img src="icons/behance.svg" type="image/svg+xml"></a>
+					</div>
+
+					<div class="icon">
+						<a href="http://uk.linkedin.com/in/michele-de-simone-82a434ab"  target="_blank"> <img src="icons/linkedin.svg" type="image/svg+xml"></a>
+					</div>
+
+					<div class="icon">
+						<a href="http://twitter.com/Mikele_87" target="_blank"> <img src="icons/twitter.svg"></a>
+					</div>
+
+					<div class="icon">
+						<a href="http://github.com/MikeDs87"  target="_blank"> <img src="icons/git.svg" type="image/svg+xml"></a>
+					</div>
+				</div>
+
+				<span class="separation-line"></span>
+
+				<div class="email-wrap clearfix">
+					<a class="email" href="mailto:micheledesimone46@gmail.com"><em>micheledesimone46@gmail.com</em></a>
+				</div>
+
+			</section>
+
+		</main>
+
+		<footer class="site-footer">
+
+			<div class="logo"></div>
+			<p> Made by Michele De Simone<br>
+				&copy; 2016 All Rights Reserved.
+			</p>
+
+			<nav class="menu">
+				<a href='#bio'>About Me</a>
+				<a href='#portfolio'>Works</a>
+				<a href='#contact'>Contacts</a>
+			</nav>
+			
+			<div class="white-box"></div>
+			<div class="background"></div>
+
+		</footer>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 		<script src="js/main.js"></script>
+
+		<script type="text/javascript" src="js/scrollup/dist/jquery.scrollUp.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(function(){
+  					$.scrollUp();
+				})
+			});
+		</script>
+
+		<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+    			$(".fancybox").fancybox({
+         			 helpers: {
+              			title : {
+                  			type : 'float'
+                  		}
+             		}
+          		})
+      		});
+		</script>
+		
 	</body>
 </html>
