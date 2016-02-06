@@ -4,15 +4,17 @@
 	background-color: $lightgrey;
 
 	.link-wrap {
-		width: 550px;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		width: 50%;
 		margin: 50px auto 0;
 
 
 		.icon {
-			display: inline-block;
-			float: left;
-			margin-left: 50px;
-
+			display: flex;
+			justify-content: space-around;
+			
 			a {
 				position: relative;
 				display: inline-block;
@@ -20,19 +22,16 @@
 				height: 100px;
 				border-radius: 50%;
 				background-color: $bluenavy;
+				transition-duration: .4s;
 
-				object {
-					overflow: hidden;
-					position:absolute;
-					top: 0;
-					right: 0;
+				&:hover {
+					background-color: $bluenavy +30;
+				}
+
+				img {
 					width: 100px;
 					height: 100px;
 				}
-			}
-
-			&:nth-child(1) {
-			margin-left: 0;
 			}
 		}
 	}
@@ -46,8 +45,8 @@
 	}
 
 	.email-wrap {
-		width: 755px;
-		margin: 0 auto;
+		display: flex;
+		justify-content: center;
 
 		.email {
 			text-decoration: none;
@@ -55,7 +54,38 @@
 			font-size: 50px;
 
 			&:hover {
-				color: $bluenavy +50;
+				color: $bluenavy +30;
+			}
+		}
+	}
+}
+@media screen and (max-width:800px) {
+	.contact {
+		h2 {
+			font-size: 40px;
+		}
+		padding: 50px 30px;
+
+		.link-wrap {
+			min-width: 100%;
+
+			.icon {
+				margin: 10px auto;
+			}
+		}
+		.email-wrap {
+			.email {
+				font-size: 30px;
+			}
+		}		
+	}
+}
+@media screen and (max-width:500px) {
+	.contact {
+		.link-wrap {min-width: 90%;}
+		.email-wrap{
+			.email {
+				font-size: 16px;
 			}
 		}
 	}

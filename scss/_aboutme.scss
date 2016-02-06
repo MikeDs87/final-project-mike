@@ -1,93 +1,105 @@
 .bio {
-	max-width: 80%;
-	margin: 0 auto;
-	margin-top: 100px;
+	transition-duration: .5s;
+	max-width: 100%;
+	padding-top: 100px;
 
 	.bio-container {
-	}
+		max-width: 80%;
+		margin: 0 auto;
 
-	img {
-		margin-left: 70px;
-		display: inline-block;
-		float: left;
-	}
-
-	h2 {
-		transform: rotate(-90deg) translate(-50px,-110px);
-		position: absolute;
-	}
-
-	.my-bio {
-		float: left;
-		margin-top: 50px;
-		margin-left: 50px;
-		max-width: 60%;
-
-		.quote {
-			position:relative;
-			z-index: 1;
-
-			color: $red + 70;
-			font-weight: 700;
-			font-size: 35px;
-			line-height: 40px;
-			text-transform: uppercase;
-
-			.quote-mark-op, .quote-mark-cl {
-				z-index: -1;
-				position: absolute;
-				width: 80px;
-				height: 80px;
-				opacity: 0.1;
-			}
-
-			.quote-mark-op {
-				top: -30px;
-				left: -10px;
-			}
-
-			.quote-mark-cl {
-				bottom: -30px;
-				right: -10px;
-			}
-
+		img {
+			margin-left: 70px;
+			display: inline-block;
+			float: left;
 		}
 
-		p {
+		h2 {
+			transform: rotate(-90deg) translate(-50px,-110px);
+			position: absolute;
+		}
+
+		.my-bio {
+			float: left;
 			margin-top: 50px;
-			color: rgba(0,0,0,0.5);
-			font-size: 20px;
-			line-height: 35px;
-		}
+			margin-left: 50px;
+			max-width: 60%;
 
+			.quote {
+				position:relative;
+				z-index: 1;
+
+				color: $red + 70;
+				font-weight: 700;
+				font-size: 35px;
+				line-height: 40px;
+				text-transform: uppercase;
+
+				.quote-mark-op, .quote-mark-cl {
+					z-index: -1;
+					position: absolute;
+					width: 80px;
+					height: 80px;
+					opacity: 0.1;
+				}
+
+				.quote-mark-op {
+					top: -30px;
+					left: -10px;
+				}
+
+				.quote-mark-cl {
+					bottom: -30px;
+					right: -10px;
+				}
+
+			}
+
+			p {
+				margin-top: 50px;
+				color: rgba(0,0,0,0.5);
+				font-size: 20px;
+				line-height: 35px;
+			}
+		}
 	}
 
 	.skills-belt {
 		margin: 100px auto;
-		max-width: 70%;
+		max-width: 80%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 
-		.label {
-			font-weight: 400;
-			color: black;
-			opacity: 0.5;
+		.right {
+			float: right;
+		}
+		.left {
+			float: left;
 		}
 
 		.column {
 			display: inline-block;
-			width: 50%;
-			float: left;
+			width: 30%;
+			margin: 0 15px;
 
 			.skill-unit {
 				margin-bottom: 20px;
 
+				.label {
+					font-weight: 400;
+					color: black;
+					opacity: 0.5;
+				}
+
 				.skill-level {
+					width: 100%;
 					font-size: 0;
 					margin-top: 10px;
 
 					span {
 						display: inline-block;
 						background-color:$bluenavy;
-						width: 30px;
+						width: 10%;
 						height: 4px;
 					}
 				@for $i from 1 through 10 {
@@ -99,7 +111,102 @@
 				}
 			}
 		}
+	}
+}
 
+@media screen and (max-width:800px) {
+	.bio {
+		padding: 50px 30px;
+		.bio-container {
+			max-width: 100%;
+			
+
+			h2 {
+				transform: none;
+				position: relative;
+				text-align: center;
+				font-size: 50px;
+				color: rgba($red, 0.8);
+				font-weight: 400;
+				margin-bottom: 50px;
+			}
+
+			img {margin: 0 auto;}
+
+			.my-bio {
+				max-width: 50%;
+				margin-left: 50px;
+				margin-top: 0;
+				// margin: 80px auto 0;
+			}
+		}
+		.skills-belt {
+			margin: 100px auto;
+			max-width: 100%;
+		}
+
+		/* .skills-belt {
+			max-width: 100%;
+			margin: 70px 0;
+
+			.right {
+				float: left;
+			}
+
+			.column {
+				margin: 0;
+				width: 80%;
+				// padding: 0 30px;
+				.skill-unit {
+					margin-bottom: 40px;
+				}
+			}
+		} */
+	}
+
+}
+@media screen and (max-width:650px) {
+	.bio {
+		padding: 50px 30px;
+		.bio-container {
+			max-width: 100%;
+			
+
+			h2 {
+				transform: none;
+				position: relative;
+				text-align: center;
+				font-size: 50px;
+				color: rgba($red, 0.8);
+				font-weight: 400;
+				margin-bottom: 40px;
+			}
+
+			img {margin: 0 auto;}
+
+			.my-bio {
+				max-width: 100%;
+				margin: 80px auto 0;
+			}
+		}
+
+		.skills-belt {
+			max-width: 100%;
+			margin: 70px 0;
+
+			.right {
+				float: left;
+			}
+
+			.column {
+				margin: 0;
+				width: 80%;
+				// padding: 0 30px;
+				.skill-unit {
+					margin-bottom: 40px;
+				}
+			}
+		}
 	}
 
 }
