@@ -33,3 +33,41 @@
 	});
 
 });*/
+
+$(function(){
+	workBelt()
+	workLoad()
+});
+
+function workBelt(){
+	$('.project').click(function() {
+		$('.work-belt').css('left','-100%');
+		$('.work-container').show();
+	});
+
+	$('.back-to-work').click(function() {
+		$('.work-belt').css('left','0%');
+		$('.work-container').hide(800);
+	});
+}
+
+function workLoad(){
+
+	$.ajaxSetup({ cache: true });
+
+	$('.project').click(function(){
+
+		var spinner = '<div class="loader">Loading...</div>',
+			newHTML = '../works/work-6.html';
+		$('.project-load').html(spinner).load(newHTML);
+
+	});
+
+};
+
+
+
+
+
+
+
