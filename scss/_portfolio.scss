@@ -2,10 +2,10 @@
 	transition-duration: .4s;
 	background-color:$lightgrey;
 	padding: 50px 0 100px;
-
-	text-align: center;
+	overflow-x:hidden;
 
 	h2 {
+		text-align: center;
 		margin-bottom: 50px;
 	}
 
@@ -32,71 +32,128 @@
 
 	} */
 
-	.showcase-belt {
-		width: 815px;
-		margin: 0 auto;
+	.work-belt {
+		width: 200%;
+		position: relative;
+		left: 0%;
+		transition-duration: .8s;
 
-		.project {
-			position: relative;
-			display: inline-block;
-			text-align: center;
-			// width: 200px;
-			// height: 180px;
-			overflow: hidden;
-
-			.description-box {
-				display: flex;
-				align-items:center;
-				justify-content: space-around;
-
-				position: absolute;
-				height: 50px;
-				bottom: -100px;
-				right: 0;
-				left: 0;
-
-				background-color: rgba(0,0,0,0.5);
-				
-				transition: bottom .4s;
-
-
-				.description {
-					color: white;
-					// text-transform: uppercase;
-					top:20px;
-					font-size: 13px;
-				}
-			}
-
-			&:hover {
-				.project {overflow: visible;}
-					.description-box {bottom: 0;}
-			}
-		}
-
-		.deactive {
-			pointer: none;
-			
-			.description-box {
-				height: 200px;
-				bottom: 0;
-
-				.description {
-					display: none;
-				}
-			}
+		.preview-wrap, .work-wrap {
+			width: 50%;
+			float: left;
 		}
 
 	}
-}
-@media screen and (max-width:800px) {
-	.portfolio {
-		padding: 50px 30px 100px;
-		.showcase-belt {
-			width: 80%;
+
+		.preview-container {
+			width: 800px;
+			margin: 0 auto;
+
 			.project {
-				// display: block;
+				position: relative;
+				// display: inline-block;
+				float: left;
+				text-align: center;
+				width: 200px;
+				height: 180px;
+				overflow: hidden;
+
+				.description-box {
+					display: flex;
+					align-items:center;
+					justify-content: space-around;
+
+					position: absolute;
+					height: 50px;
+					bottom: -100px;
+					right: 0;
+					left: 0;
+
+					background-color: rgba(0,0,0,0.5);
+					
+					transition: bottom .4s;
+
+					.description {
+						color: white;
+						// text-transform: uppercase;
+						top:20px;
+						font-size: 13px;
+					}
+				}
+
+				&:hover {
+					.project {overflow: visible;}
+						.description-box {bottom: 0;}
+				}
 			}
+
+			/* .deactive {
+				pointer: none;
+				
+				.description-box {
+					height: 200px;
+					bottom: 0;
+
+					.description {
+						display: none;
+					}
+				}
+			} */
+
+		}
+
+		.work-container {
+			width: 600px;
+			margin: 0 auto;
+			display: none;
+
+			img {
+				max-width: 100%;
+			}
+
+			h3 {
+				clear: both;
+				margin-bottom: 20px;
+				color: rgba(0,0,0,0.5);
+				font-weight: 400;
+				font-size: 20px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+
+			p {
+				margin: 10px 0 30px;
+				color: rgba(0,0,0,0.5);
+			}
+
+			.back-to-work {
+				position: relative;
+				i, p {
+					display: inline-block;
+					color: rgba(0,0,0,0.5);
+					float: left;
+				}
+				i {
+					cursor: pointer;
+					font-size: 30px;
+					&:hover {
+						color: rgba(0,0,0,1);
+					}
+				}
+				p {
+					text-transform: uppercase;
+					font-size: 13px;
+					margin-left: 10px;
+					line-height: 10px;
+				}
+			}
+		}
+}
+@media screen and (max-width:810px) {
+	.work-belt {
+		padding: 0 30px;
+		.preview-container {
+			width: 400px;
 		}
 	}
 }
@@ -106,17 +163,11 @@
 			font-size: 40px;
 			margin-bottom: 50px;
 		}
-		padding: 50px 10px 100px;
-		.showcase-belt {
-			width: 100%;
-			.project {
+		.preview-container {
+			width: 250px;
+			.project, img {
 				width: 250px;
 				height: 230px;
-				img {
-					width: 250px;
-				height: 230px;
-				}
-				// display: block;
 			}
 		}
 	}
