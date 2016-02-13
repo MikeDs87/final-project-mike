@@ -57,9 +57,13 @@ function workLoad(){
 
 	$('.project').click(function(){
 
-		var spinner = '<div class="loader">Loading...</div>',
-			newHTML = '../works/work-6.html';
+		var $this = $(this),
+			spinner = '<div class="loader">Loading...</div>',
+			newHTML = 'works/work-6.html',
+			newTitle = $this.find('.description').text();
+			console.log(newTitle);
 		$('.project-load').html(spinner).load(newHTML);
+		$('.project-title').text(newTitle);
 
 	});
 
