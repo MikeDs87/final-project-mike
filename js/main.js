@@ -46,8 +46,14 @@ function workBelt(){
 	});
 
 	$('.back-to-work').click(function() {
+		var offset = 20; //Offset of 20px
+
 		$('.work-belt').css('left','0%');
 		$('.work-container').hide(800);
+
+    	$('html, body').animate({
+        	scrollTop: $("#portfolio").offset().top + offset
+   		}, 1000);
 	});
 }
 
