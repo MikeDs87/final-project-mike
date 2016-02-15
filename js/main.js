@@ -53,7 +53,7 @@ function workBelt(){
 
     	$('html, body').animate({
         	scrollTop: $("#portfolio").offset().top + offset
-   		}, 1000);
+   		}, 500);
 	});
 }
 
