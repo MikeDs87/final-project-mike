@@ -55,10 +55,11 @@
 			}
 
 			p {
+				text-align: justify;
 				margin-top: 50px;
 				color: rgba(0,0,0,0.5);
-				font-size: 20px;
-				line-height: 35px;
+				font-size: 15px;
+				line-height: 25px;
 			}
 		}
 	}
@@ -144,26 +145,7 @@
 			margin: 100px auto;
 			max-width: 100%;
 		}
-
-		/* .skills-belt {
-			max-width: 100%;
-			margin: 70px 0;
-
-			.right {
-				float: left;
-			}
-
-			.column {
-				margin: 0;
-				width: 80%;
-				// padding: 0 30px;
-				.skill-unit {
-					margin-bottom: 40px;
-				}
-			}
-		} */
 	}
-
 }
 @media screen and (max-width:650px) {
 	.bio {
@@ -201,7 +183,6 @@
 			.column {
 				margin: 0;
 				width: 80%;
-				// padding: 0 30px;
 				.skill-unit {
 					margin-bottom: 40px;
 				}

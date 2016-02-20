@@ -23,9 +23,20 @@
 				border-radius: 50%;
 				background-color: $bluenavy;
 				transition-duration: .4s;
+				text-align: center;
 
 				&:hover {
 					background-color: $bluenavy +30;
+				}
+
+				i {
+					font-size: 70px;
+					line-height: 100px;
+					color: white;
+				}
+
+				.resize-text {
+					font-size: 55px;
 				}
 
 				img {
@@ -47,11 +58,13 @@
 	.email-wrap {
 		display: flex;
 		justify-content: center;
+		
 
 		.email {
 			text-decoration: none;
 			color: $bluenavy;
 			font-size: 50px;
+			transition-duration: .4s;
 
 			&:hover {
 				color: $bluenavy +30;

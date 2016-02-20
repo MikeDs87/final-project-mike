@@ -38,7 +38,7 @@ body {
   float: right;
   margin: 30px 20px 0 0; }
   .menu a {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.4);
     margin-left: 10px;
     text-decoration: none;
     text-transform: uppercase;
@@ -46,7 +46,7 @@ body {
     font-weight: 700; }
   .menu a:hover {
     transition-duration: 0.4s;
-    color: rgba(0, 0, 0, 0.9); }
+    color: rgba(0, 0, 0, 0.8); }
 
 .header-container {
   position: absolute;
@@ -78,34 +78,39 @@ body {
   top: 15px;
   right: 20px;
   font-size: 40px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.5);
   cursor: pointer; }
   .hamburger-menu:hover {
     transition-duration: 0.4s;
-    color: white; }
+    color: rgba(0, 0, 0, 0.9); }
 
 .name-wrapper {
   clear: both;
   margin: 0 auto;
   position: relative;
   max-width: 70%;
-  top: 32%;
+  top: 20%;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  color: white; }
+  color: white;
+  transition-duration: .4s; }
   .name-wrapper .name-unit {
     display: inline-block;
     margin: 0 auto;
     padding: 30px 40px;
-    background: repeating-linear-gradient(-55deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2) 3px, rgba(255, 255, 255, 0.2) 3px, rgba(0, 0, 0, 0.2) 6px);
+    border: solid white 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
     text-align: center; }
     .name-wrapper .name-unit h1 {
-      font-size: 71px; }
+      font-size: 60px; }
+      .name-wrapper .name-unit h1 span {
+        font-size: 50px; }
   .name-wrapper p {
-    margin-top: 20px;
-    letter-spacing: 0.2em;
-    text-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
+    margin-top: 15px;
+    letter-spacing: 0.4em;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
 
 .look-down {
   position: absolute;
@@ -128,7 +133,7 @@ body {
     left: 0;
     right: 0;
     height: 70px;
-    background-color: #30343F;
+    background-color: #4c4c4c;
     text-align: center;
     line-height: 2.3; }
     .site-header .menu a {
@@ -192,10 +197,11 @@ body {
           bottom: -30px;
           right: -10px; }
       .bio .bio-container .my-bio p {
+        text-align: justify;
         margin-top: 50px;
         color: rgba(0, 0, 0, 0.5);
-        font-size: 20px;
-        line-height: 35px; }
+        font-size: 15px;
+        line-height: 25px; }
   .bio .skills-belt {
     margin: 100px auto;
     max-width: 80%;
@@ -248,24 +254,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .bio {
-    padding: 50px 30px;
-    		/* .skills-belt {
-    			max-width: 100%;
-    			margin: 70px 0;
-    
-    			.right {
-    				float: left;
-    			}
-    
-    			.column {
-    				margin: 0;
-    				width: 80%;
-    				// padding: 0 30px;
-    				.skill-unit {
-    					margin-bottom: 40px;
-    				}
-    			}
-    		} */ }
+    padding: 50px 30px; }
     .bio .bio-container {
       max-width: 100%; }
       .bio .bio-container h2 {
@@ -417,7 +406,8 @@ body {
         float: left; }
       .portfolio .work-container .back-to-work i {
         cursor: pointer;
-        font-size: 30px; }
+        font-size: 20px;
+        line-height: 1.5; }
         .portfolio .work-container .back-to-work i:hover {
           color: black; }
       .portfolio .work-container .back-to-work p {
@@ -516,9 +506,16 @@ body {
         height: 100px;
         border-radius: 50%;
         background-color: #8d99ae;
-        transition-duration: .4s; }
+        transition-duration: .4s;
+        text-align: center; }
         .contact .link-wrap .icon a:hover {
           background-color: #abb7cc; }
+        .contact .link-wrap .icon a i {
+          font-size: 70px;
+          line-height: 100px;
+          color: white; }
+        .contact .link-wrap .icon a .resize-text {
+          font-size: 55px; }
         .contact .link-wrap .icon a img {
           width: 100px;
           height: 100px; }
@@ -534,7 +531,8 @@ body {
     .contact .email-wrap .email {
       text-decoration: none;
       color: #8d99ae;
-      font-size: 50px; }
+      font-size: 50px;
+      transition-duration: .4s; }
       .contact .email-wrap .email:hover {
         color: #abb7cc; }
 
@@ -583,12 +581,12 @@ body {
     z-index: -2;
     background-image: url(../img/hero.jpg);
     background-size: cover;
-    background-position: center; }
+    background-position: 0% 70%; }
   .site-footer .scrollUp {
     opacity: 0;
     transition: opacity .3s;
     visibility: hidden;
-    line-height: 50px;
+    line-height: 45px;
     text-align: center;
     border-radius: 50%;
     font-size: 20px;

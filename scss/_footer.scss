@@ -39,14 +39,14 @@
 		z-index: -2;
 		background-image: url(../img/hero.jpg);
 		background-size: cover;
-		background-position: center;
+		background-position: 0% 70%;
 	}
 
 	.scrollUp {
 		opacity: 0;
 		transition: opacity .3s;
 		visibility: hidden;
-		line-height: 50px;
+		line-height: 45px;
 		text-align: center;
 		border-radius: 50%;
 		font-size: 20px;
