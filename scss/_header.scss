@@ -11,7 +11,7 @@
 	margin: 30px 20px 0 0;
 
 	a {
-		color: rgba(0, 0, 0, 0.5);
+		color: rgba(0, 0, 0, 0.4);
 		margin-left: 10px;
 
 		text-decoration: none;
@@ -22,7 +22,7 @@
 
 	a:hover {
 		transition-duration: 0.4s;
-		color: rgba(0, 0, 0, 0.9);
+		color: rgba(0, 0, 0, 0.8);
 	}
 }
 
@@ -60,12 +60,12 @@
 	top: 15px;
 	right: 20px;
 	font-size: 40px;
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(0, 0, 0, 0.5);
 	cursor: pointer;
 
 	&:hover {
 		transition-duration: 0.4s;
-		color: rgba(255, 255, 255, 1);
+		color: rgba(0, 0, 0, 0.9);
 	}
 
 }
@@ -75,36 +75,44 @@
 	margin: 0 auto;
 	position: relative;
 	max-width: 70%;
-	top:32%;
+	top:20%;
 
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: white;
 
+	transition-duration: .4s;
+
 	.name-unit {
 		display: inline-block;
 		margin: 0 auto;
 		padding: 30px 40px;
+
+		border: solid white 5px;
+		text-shadow: 1px 1px 1px rgba(0,0,0, 0.1);
 		
-		background: repeating-linear-gradient(
-		  -55deg,
-		  rgba(255,255,255,0.2),
-		  rgba(0,0,0,0.2) 3px,
-		  rgba(255,255,255,0.2) 3px,
-		  rgba(0,0,0,0.2) 6px
-		);
+		// background: repeating-linear-gradient(
+		//   -55deg,
+		//   rgba(255,255,255,0.2),
+		//   rgba(0,0,0,0.2) 3px,
+		//   rgba(255,255,255,0.2) 3px,
+		//   rgba(0,0,0,0.2) 6px
+		// );
 
 		text-align: center;
 
 		h1 {
-			font-size: 71px;
+			font-size: 60px;
+
+			span {font-size: 50px;}
 		}
 	}
 	p {
-		margin-top: 20px;
-		letter-spacing: 0.2em;
-		text-shadow: 0 0 7px rgba(0,0,0, 0.2);
+		margin-top: 15px;
+		letter-spacing: 0.4em;
+		font-weight: 300;
+		text-shadow: 1px 1px 1px rgba(0,0,0, 0.1);
 	}
 }
 
@@ -134,7 +142,7 @@
 			left: 0;
 			right: 0;
 			height: 70px;
-			background-color: #30343F;
+			background-color: #4c4c4c;
 			text-align: center;
 			line-height: 2.3;
 
@@ -151,10 +159,6 @@
 				}
 			}
 		}
-		// .logo {
-		// 	width:30px;
-		// 	height:30px;
-		// }
 		.hamburger-menu {
 			display: inline-block;
 

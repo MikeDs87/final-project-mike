@@ -51,7 +51,6 @@
 
 			.project {
 				position: relative;
-				// display: inline-block;
 				float: left;
 				text-align: center;
 				width: 200px;
@@ -75,7 +74,6 @@
 
 					.description {
 						color: white;
-						// text-transform: uppercase;
 						top:20px;
 						font-size: 13px;
 					}
@@ -135,7 +133,8 @@
 				}
 				i {
 					cursor: pointer;
-					font-size: 30px;
+					font-size: 20px;
+					line-height: 1.5;
 					&:hover {
 						color: rgba(0,0,0,1);
 					}
