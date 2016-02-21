@@ -382,7 +382,7 @@ body {
       .portfolio .preview-container .project:hover .description-box {
         bottom: 0; }
   .portfolio .work-container {
-    width: 600px;
+    width: 50%;
     margin: 0 auto;
     display: none; }
     .portfolio .work-container img {
@@ -420,7 +420,9 @@ body {
   .work-belt {
     padding: 0 30px; }
     .work-belt .preview-container {
-      width: 400px; } }
+      width: 400px; }
+    .work-belt .work-container {
+      width: 70%; } }
 @media screen and (max-width: 500px) {
   .portfolio h2 {
     font-size: 40px;
