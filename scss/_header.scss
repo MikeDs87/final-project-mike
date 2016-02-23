@@ -135,6 +135,7 @@
 @media screen and (max-width:700px) {
 	.site-header {
 		.menu {
+			// visibility: hidden;
 			position: fixed;
 			z-index: 400;
 			margin: 0;
@@ -165,7 +166,7 @@
 		}
 		.name-wrapper {
 			max-width: 100%;
-			top:25%;
+			// top:25%;
 			.name-unit {
 				padding: 30px 20px;
 				h1 {
@@ -176,6 +177,20 @@
 				margin-top: 15px;
 				font-size: 12px;
 			}
+		}
+	}
+}
+@media screen and (max-width:400px) {
+	.name-wrapper {
+		top:10%;
+		.name-unit {
+			h1 {
+				font-size: 40px;
+			}
+		}
+		p {
+			margin-top: 15px;
+			font-size: 8px;
 		}
 	}
 }
