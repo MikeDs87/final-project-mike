@@ -389,7 +389,7 @@ body {
       .portfolio .preview-container .project:hover .description-box {
         bottom: 0; }
   .portfolio .work-container {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     display: none; }
     .portfolio .work-container img {
