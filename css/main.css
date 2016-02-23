@@ -148,8 +148,7 @@ body {
   .site-header .hamburger-menu {
     display: inline-block; }
   .site-header .name-wrapper {
-    max-width: 100%;
-    top: 25%; }
+    max-width: 100%; }
     .site-header .name-wrapper .name-unit {
       padding: 30px 20px; }
       .site-header .name-wrapper .name-unit h1 {
@@ -157,6 +156,14 @@ body {
     .site-header .name-wrapper p {
       margin-top: 15px;
       font-size: 12px; } }
+@media screen and (max-width: 400px) {
+  .name-wrapper {
+    top: 10%; }
+    .name-wrapper .name-unit h1 {
+      font-size: 40px; }
+    .name-wrapper p {
+      margin-top: 15px;
+      font-size: 8px; } }
 .bio {
   transition-duration: .5s;
   max-width: 100%;
@@ -418,11 +425,7 @@ body {
 
 @media screen and (max-width: 810px) {
   .work-belt {
-    padding: 0 30px; }
-    .work-belt .preview-container {
-      width: 400px; }
-    .work-belt .work-container {
-      width: 70%; } }
+    padding: 0 20px; } }
 @media screen and (max-width: 500px) {
   .portfolio h2 {
     font-size: 40px;
