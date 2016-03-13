@@ -1,13 +1,12 @@
 .contact {
-	padding: 50px 0;
+	padding: 30px 0 100px;
 	width: 100%;
-	background-color: $lightgrey;
 
 	.link-wrap {
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
-		width: 50%;
+		width: 600px;
 		margin: 50px auto 0;
 
 
@@ -21,12 +20,12 @@
 				width: 100px;
 				height: 100px;
 				border-radius: 50%;
-				background-color: $bluenavy;
+				background-color: $d-grey;
 				transition-duration: .4s;
 				text-align: center;
 
 				&:hover {
-					background-color: $bluenavy +30;
+					background-color: $green;
 				}
 
 				i {
@@ -52,7 +51,7 @@
 		display: block;
 		height: 3px;
 		width: 200px;
-		background-color: $bluenavy;
+		background-color: $green;
 	}
 
 	.email-wrap {
@@ -62,44 +61,35 @@
 
 		.email {
 			text-decoration: none;
-			color: $bluenavy;
-			font-size: 50px;
+			color: $d-grey;
+			font-size: 30px;
+			font-weight: 300;
 			transition-duration: .4s;
 
+			@media screen and (max-width:800px) {
+				font-size: 30px;
+			}
+
+			@media screen and (max-width:500px) {
+				font-size: 16px;
+			}
+
 			&:hover {
-				color: $bluenavy +30;
+				color: $green;
 			}
 		}
 	}
 }
 @media screen and (max-width:800px) {
 	.contact {
-		h2 {
-			font-size: 40px;
-		}
 		padding: 50px 30px;
 
 		.link-wrap {
-			min-width: 100%;
+			width: 100%;
 
 			.icon {
 				margin: 10px auto;
 			}
-		}
-		.email-wrap {
-			.email {
-				font-size: 30px;
-			}
-		}		
-	}
-}
-@media screen and (max-width:500px) {
-	.contact {
-		.link-wrap {min-width: 90%;}
-		.email-wrap{
-			.email {
-				font-size: 16px;
-			}
-		}
+		}	
 	}
 }

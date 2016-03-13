@@ -1,11 +1,13 @@
 .work-together {
-	padding: 50px 0;
+	padding: 30px 0;
+	background-color:$d-grey;
 
 	p {
-		margin: 20px 0 50px;
+		margin: 20px 0 80px;
 		text-align: center;
 
-		color: rgba(0,0,0,0.5); 
+		color: white;
+		font-weight: 300; 
 	}
 
 	form {
@@ -13,14 +15,18 @@
 		max-width: 500px;
 		margin: 0 auto 50px;
 
+		span {
+			font-weight: 300;
+		}
+
 		input, textarea {
-			border: 2px solid $bluenavy;
+			border: 2px solid $green;
 			width: 100%;
 			padding: 10px;
 
 			&:focus {
 				outline: none;
-				border-color: $bluenavy +50;
+				border-color: $green +50;
 			}
 		}
 
@@ -34,13 +40,14 @@
 		}
 
 		[type="submit"] {
-			background: $bluenavy;
+			background: $green;
 			color: white;
 			font-size: 18px;
 			width: 30%;
 
 			&:hover {
-				background: $bluenavy +50;
+				color: $d-grey;
+				background: $green +50;
 				transition-duration: 0.4s;
 			}
 
@@ -67,7 +74,7 @@
 			span {
 				display: block;
 				margin-bottom: 10px;
-				color: rgba(0,0,0,0.5);
+				color: white;
 			}
 		}
 	}

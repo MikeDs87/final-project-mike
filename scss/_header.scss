@@ -11,18 +11,19 @@
 	margin: 30px 20px 0 0;
 
 	a {
-		color: rgba(0, 0, 0, 0.4);
+		color: rgba(255, 255, 255, 1);
 		margin-left: 10px;
+		padding-bottom: 3px;
 
 		text-decoration: none;
 		text-transform: uppercase;
-		font-size: 13px;
+		font-size: 12px;
 		font-weight: 700;
+		letter-spacing: 1px;
 	}
 
 	a:hover {
-		transition-duration: 0.4s;
-		color: rgba(0, 0, 0, 0.8);
+		border-bottom: solid $green 2px;
 	}
 }
 
@@ -60,12 +61,12 @@
 	top: 15px;
 	right: 20px;
 	font-size: 40px;
-	color: rgba(0, 0, 0, 0.5);
+	color: white;
 	cursor: pointer;
 
 	&:hover {
 		transition-duration: 0.4s;
-		color: rgba(0, 0, 0, 0.9);
+		color: $green;
 	}
 
 }
@@ -75,11 +76,11 @@
 	margin: 0 auto;
 	position: relative;
 	max-width: 70%;
-	top:20%;
+	top:30%;
 
 	text-align: center;
 	text-transform: uppercase;
-	font-weight: 700;
+	
 	color: white;
 
 	transition-duration: .4s;
@@ -89,53 +90,31 @@
 		margin: 0 auto;
 		padding: 30px 40px;
 
-		border: solid white 5px;
-		text-shadow: 1px 1px 1px rgba(0,0,0, 0.1);
-		
-		// background: repeating-linear-gradient(
-		//   -55deg,
-		//   rgba(255,255,255,0.2),
-		//   rgba(0,0,0,0.2) 3px,
-		//   rgba(255,255,255,0.2) 3px,
-		//   rgba(0,0,0,0.2) 6px
-		// );
-
+		border: solid $green 3px;
 		text-align: center;
 
 		h1 {
+			font-weight: 700;
 			font-size: 60px;
-
-			span {font-size: 50px;}
 		}
 	}
 	p {
 		margin-top: 15px;
 		letter-spacing: 0.4em;
 		font-weight: 300;
-		text-shadow: 1px 1px 1px rgba(0,0,0, 0.1);
 	}
 }
 
 .look-down {
 		position: absolute;
-		bottom: 1%;
+		bottom: 2%;
 		width: 100%;
-
-		color: white;
-		font-size: 12px;
 		text-align: center;
-		text-shadow: 0 0 7px rgba(0,0,0, 0.5);
-		text-decoration: none;
-
-		i {
-			display: block;
-		}
 	}
 
 @media screen and (max-width:700px) {
 	.site-header {
 		.menu {
-			// visibility: hidden;
 			position: fixed;
 			z-index: 400;
 			margin: 0;
@@ -143,22 +122,15 @@
 			left: 0;
 			right: 0;
 			height: 70px;
-			background-color: #4c4c4c;
+			background-color: $d-grey;
 			text-align: center;
 			line-height: 2.3;
 
 			a {
 				margin: 0;
-				font-weight: 400;
 				padding: 0 5px;
-				color: rgba(255,255,255,0.7);
-				& + a {
-					border-left: 1px solid white;
 				}
-				&:hover {
-					color: rgba(255,255,255,1);
-				}
-			}
+			
 		}
 		.hamburger-menu {
 			display: inline-block;
