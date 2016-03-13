@@ -1,193 +1,191 @@
 .bio {
 	transition-duration: .5s;
 	max-width: 100%;
-	padding-top: 100px;
+	padding-top: 30px;
 
 	.bio-container {
-		max-width: 80%;
+		max-width: 1200px;
 		margin: 0 auto;
 
-		img {
-			margin-left: 70px;
-			display: inline-block;
-			float: left;
+		@media screen and (max-width:1330px) {
+			max-width: 800px;
 		}
 
+		
+
 		h2 {
-			transform: rotate(-90deg) translate(-50px,-110px);
-			position: absolute;
+			margin-bottom: 0;
+		}
+
+		.my-photo {
+			transition-duration: .5s;
+			display: inline-block;
+			float: left;
+			height: 550px;
+			overflow: hidden;
+
+			@media screen and (max-width:1330px) {
+				height: 290px;
+				}
+
+			img {
+				width: 750px;
+				height: auto;
+
+				@media screen and (max-width:1330px) {
+				width: 400px;
+				}
+				
+			}
 		}
 
 		.my-bio {
+			transition-duration: .5s;
 			float: left;
-			margin-top: 50px;
-			margin-left: 50px;
-			max-width: 60%;
+			margin-top: 150px;
+			margin-left: 30px;
+			max-width: 400px;
+
+			@media screen and (max-width:1330px) {
+				margin-top: 50px;
+				margin-left: 0;
+				max-width: 350px;
+			}
 
 			.quote {
 				position:relative;
 				z-index: 1;
 
-				color: $bluenavy;
+				color: $d-grey;
 				font-weight: 700;
-				font-size: 35px;
-				line-height: 40px;
+				font-size: 20px;
+				line-height: 25px;
 				text-transform: uppercase;
 
-				.quote-mark-op, .quote-mark-cl {
-					z-index: -1;
-					position: absolute;
-					width: 80px;
-					height: 80px;
-					opacity: 0.1;
-				}
-
-				.quote-mark-op {
-					top: -30px;
-					left: -10px;
-				}
-
-				.quote-mark-cl {
-					bottom: -30px;
-					right: -10px;
-				}
+				border-left: 3px solid $green;
+				padding-left: 10px;
 
 			}
 
 			p {
 				text-align: justify;
-				margin-top: 50px;
+				margin-top: 30px;
 				color: rgba(0,0,0,0.5);
-				font-size: 15px;
-				line-height: 25px;
+				font-size: 10px;
+				line-height: 20px;
 			}
 		}
 	}
 
-	.skills-belt {
-		margin: 100px auto;
-		max-width: 80%;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
+	.skill {
 
-		.right {
-			float: right;
-		}
-		.left {
-			float: left;
-		}
+		// height: 500px;
+		background-color:$d-grey;
 
-		.column {
-			display: inline-block;
-			width: 30%;
-			margin: 0 15px;
+		.skills-container {
+			padding: 100px 0;
+			margin:  auto;
+			max-width: 70%;
+		
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
 
-			.skill-unit {
-				margin-bottom: 20px;
-
-				.label {
-					font-weight: 400;
-					color: black;
-					opacity: 0.5;
-				}
-
-				.skill-level {
-					width: 100%;
-					font-size: 0;
-					margin-top: 10px;
-
-					span {
-						display: inline-block;
-						background-color:$bluenavy;
-						width: 10%;
-						height: 4px;
-					}
-				@for $i from 1 through 10 {
-					  &.rate-#{$i} span:nth-child(n+#{$i+1}) {  
-					  	background-color: $lightgrey;
-					  }
-				}
-
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width:800px) {
-	.bio {
-		padding: 50px 30px;
-		.bio-container {
-			max-width: 100%;
-			
-
-			h2 {
-				transform: none;
-				position: relative;
-				text-align: center;
-				font-size: 50px;
-				color: rgba($red, 0.8);
-				font-weight: 400;
-				margin-bottom: 50px;
-			}
-
-			img {margin: 0 auto;}
-
-			.my-bio {
-				max-width: 50%;
-				margin-left: 50px;
-				margin-top: 0;
-				// margin: 80px auto 0;
-			}
-		}
-		.skills-belt {
-			margin: 100px auto;
-			max-width: 100%;
-		}
-	}
-}
-@media screen and (max-width:650px) {
-	.bio {
-		padding: 50px 30px;
-		.bio-container {
-			max-width: 100%;
-			
-
-			h2 {
-				transform: none;
-				position: relative;
-				text-align: center;
-				font-size: 50px;
-				color: rgba($red, 0.8);
-				font-weight: 400;
-				margin-bottom: 40px;
-			}
-
-			img {margin: 0 auto;}
-
-			.my-bio {
-				max-width: 100%;
-				margin: 80px auto 0;
-			}
-		}
-
-		.skills-belt {
-			max-width: 100%;
-			margin: 70px 0;
-
-			.right {
-				float: left;
+			@media screen and (max-width:1330px) {
+				max-width: 90%;
 			}
 
 			.column {
-				margin: 0;
-				width: 80%;
+				display: inline-block;
+				width: 30%;
+				margin: 0 15px;
+
 				.skill-unit {
-					margin-bottom: 40px;
+					margin-bottom: 20px;
+
+					.label {
+						font-size: 13px;
+						font-weight: 300;
+						color: white;
+
+						i {margin-right: 10px;}
+					}
+
+					.skill-level {
+						width: 100%;
+						font-size: 0;
+						margin-top: 10px;
+
+						span {
+							display: inline-block;
+							background-color:$green;
+							width: 10%;
+							height: 4px;
+						}
+					@for $i from 1 through 10 {
+						  &.rate-#{$i} span:nth-child(n+#{$i+1}) {  
+						  	background-color: $lightgrey;
+						  }
+					}
+
+					}
 				}
 			}
 		}
 	}
+}
 
+@media screen and (max-width:840px) {
+	.bio {
+		.bio-container {
+			max-width: 100%;
+
+			h2 {
+				margin-bottom: 50px;
+			}
+
+			.my-photo {
+				display: block;
+				width: 300px;
+				height: 300px;
+				border-radius: 50%;
+				float: none;
+				margin: 0 auto;
+				overflow: hidden;
+
+				img {width: 400px;}
+
+			}
+			
+			.my-bio {
+				float: none;
+				max-width: 100%;
+				margin-left: 0;
+				margin-top: 30px;
+				padding: 0 30px;
+
+				margin: 30px 0 30px;
+			}
+		}
+
+		.skill {
+			height: auto;
+
+			.skills-container {
+				padding: 25px 0 0;
+				margin: 0 auto;
+				max-width: 60%;
+
+				.column {
+					display: block;
+					margin: 0;
+					width: 100%;
+
+					.skill-unit {
+						margin-bottom: 25px;
+					}
+				}
+			}
+		}
+	}
 }

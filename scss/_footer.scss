@@ -1,7 +1,7 @@
 .site-footer {
 	position: relative;
 	width: 100%;
-	height: 90px;
+	height: 150px;
 
 	p, .menu, .logo {
 		z-index: 2;
@@ -10,26 +10,17 @@
 	p {
 		float: right;
 		margin: 30px 30px 0 0;
-		color: rgba(0,0,0,0.5);
+		color: white;
 
 		font-size: 13px;
-		line-height: 1.2;
+		font-weight: 300;
+		line-height: 1.4;
 
 	}
 
 	.menu {
 		float: left;
 		margin: 35px 0 0 5px;
-	}
-
-	.white-box { //hack for apply the opacity to the background image
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-
-		background-color: white;
-		opacity: 0.5;
 	}
 
 	.background {
@@ -48,13 +39,13 @@
 		visibility: hidden;
 		line-height: 45px;
 		text-align: center;
-		border-radius: 50%;
+		border-radius: 10%;
 		font-size: 20px;
-	    bottom: 110px;
+	    bottom: 160px;
 	    right: 20px;
 	    width: 50px;
 	    height: 50px;
-	    background-color: rgba(0,0,0,0.5);
+	    background-color: rgba($green, 0.8);
 	    color: #fff;
 	    position: fixed; 
 	    z-index: 2147483647;
@@ -64,7 +55,7 @@
 		visibility: visible;
 	}
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
 	.site-footer {
 		position: relative;
 		.logo {
@@ -72,8 +63,9 @@
 			height: 30px;
 		}
 		p {
-			margin: 10px 0;
-			float: left;
+			position: absolute;
+			bottom: 10%;
+			margin: 10px auto;
 			width: 100%;
 			text-align: center;
 			font-size: 10px;
@@ -81,14 +73,15 @@
 				display: none;
 			}
 		}
+
 		.menu {
 			margin: 0;
 			position: absolute;
-			top: 30%;
+			top: 20px;
 			right: 10px;
 
 			a {
-				font-size: 12px;
+				font-size: 10px;
 			}
 		}
 		.scrollUp {
